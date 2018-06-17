@@ -35,7 +35,7 @@ def root():
     if error_str:
         return 'Error: {}'.format(error_str)
     else:
-        return 'Hi, {}. I am {}.'.format(user_email, platform.node())
+        return 'Hi, {}. I am {}. JWT: {}'.format(user_email, platform.node(), jwt)
 
 
 if __name__ == '__main__':
